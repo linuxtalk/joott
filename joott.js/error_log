@@ -1,0 +1,2 @@
+[08-Aug-2012 13:18:52 UTC] PHP Fatal error:  Call to undefined function random() in /home/joottinf/public_html/bingo/joott.js/libraries/authorize.js on line 7
+[08-Aug-2012 13:19:50 UTC] PHP Fatal error:  Call to undefined function random() in /home/joottinf/public_html/bingo/joott.js/libraries/authorize.js on line 7

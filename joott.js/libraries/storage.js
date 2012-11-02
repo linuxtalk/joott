@@ -1,0 +1,4 @@
+
+storage = function () {
+	return this;
+}

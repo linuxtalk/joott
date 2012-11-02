@@ -1,0 +1,103 @@
+
+div.create_carousel {
+	position: absolute;
+	
+	overflow:hidden;
+	border-bottom:1px solid siver;
+}
+
+div.create_carousel div.c_title div {
+	text-align: center;
+	cursor:pointer;
+}
+
+div.create_carousel div.c_pointer div div{
+	background:url("/modules/templates/prc/images/carl_rollover_arrow.png") no-repeat scroll center center;
+}
+
+div.create_carousel div.c_title div , div.create_carousel div.c_pointer div {
+	width:150px;
+	float:left;
+}
+
+
+div.create_carousel div.c_body {
+	width: 983px;
+	height: 250px;
+	overflow: hidden;
+	top:40px;
+	/*border: 1px solid black;*/
+}
+
+div.create_carousel div.c_body div.c_body_inner {
+	width: 3000px;
+	height: 250px;
+}
+
+div.create_carousel div.c_body div.c_body_inner > div {
+	position:absolute;
+	width: 3000px;
+	left:0px;
+}
+
+div.create_carousel div.c_body div.c_body_inner div div {
+	width: 320px;
+	height: 250px;
+	float:left;
+	position: absolute;
+	padding-left:25px;
+}
+
+div.rbutton, div.lbutton {
+	position:absolute;
+	top:16px;
+	height: 250px;
+	width: 25px;
+	background-color: white;
+}
+
+
+
+div.lbutton {
+	z-index:1;
+	background-color: white;
+}
+
+div.lbutton div {
+	background:url("/modules/templates/prc/images/scroll-left.gif") no-repeat scroll center center;
+	position:relative;
+	height:100%;
+	left: -5px;
+	cursor:pointer;
+}
+
+
+div.rbutton {
+	left:959px;
+	z-index:1;
+	background-color: white;
+	
+}
+div.rbutton div {
+	background:url("/modules/templates/prc/images/scroll-right.gif") no-repeat scroll center center;
+	position:relative;
+	height:100%;
+	left: 5px;
+	cursor:pointer;
+}
+
+div.create_carousel_holder {
+	position:absolute;
+	top: 450px;
+	border-bottom:1px solid silver 
+}
+div.info{
+	position:absolute;
+	top:800px;
+}
+
+div.info div{ 
+	float:left;
+	width: 300px;
+	height: 250px;
+}

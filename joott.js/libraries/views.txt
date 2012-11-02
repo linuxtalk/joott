@@ -1,0 +1,16 @@
+drop view behaviour_matrix;
+create view behaviour_matrix as 
+select d.name, l.code, l.description, behaviour_id, b.id behaviour_ref, b.text, b.disabled
+from domain d, level l, behaviour b
+where d.id = l.domain_id
+and d.id = b.domain_id
+and l.id = b.level_id;
+
+
+drop view job_matrix;
+create view job_matrix as
+select b.*,job.id,job.title, j2b.behaviour_id recorded_behaviour_id, j2b.job_id
+from job left join job2behaviour j2b on job.id = j2b.job_id,
+behaviour_matrix b left join job2behaviour on b.behaviour_ref = job2behaviour.behaviour_id
+where j2b.job_id is null or (job.id = j2b.job_id and j2b.behaviour_id = behaviour_ref);
+
